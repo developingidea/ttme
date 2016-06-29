@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://everydayiminstagrammin.stephenscaff.com/ -->
+<html class="wf-notoserif-n4-active wf-montserrat-n4-active wf-montserrat-n7-active wf-abrilfatface-n4-active wf-rokkit-n4-inactive wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- Title and Meta
+================================================== -->
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title>Every Day I'm Instagramin' | by Stephen Scaff</title>
+
+<meta name="description" content="A simple little plugin to display an instagram feed, with some captions styles.">
+<meta name="author" content="Stephen Scaff">
+<meta name="keywords" content="instagram plugin, jquery instagram, instagramn, every day I&#39;m instagramn, stephen scaff, sosweet creative, urban influence">
+
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="http://everydayiminstagrammin.sstephenscaff.com/">
+<meta property="og:title" content="EveryDayImInstgrammin.js">
+<meta property="og:site_name" content="Every Day I&#39;m Instagrammin by Stephen Scaff">
+<meta property="og:type" content="website">
+<meta property="og:description" content="A simple little plugin to display an instagram feed, by user or hashtag, with some captions styles.">
+<meta property="og:image" content="http://everydayiminstagrammin.stephenscaff.com/everydayiminstagrammin.jpg">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@https://twitter.com/stephenscaff">
+<meta name="twitter:site" content="@stephenscaff">
+<meta name="twitter:url" content="http://everydayiminstagrammin.stephenscaff.com/">
+<meta name="twitter:title" content="Everyday Im Instagrammin">
+<meta name="twitter:description" content="A simple little plugin by Stephen Scaff to display an instagram feed, by user or hash, with some captions styles.">
+<meta name="twitter:image" content="http://everydayiminstagrammin.stephenscaff.com/everydayiminstagrammin.jpg">
+
+<meta name="robots" content="index,follow">
+
+
+
+<!-- Google Analytics
+================================================== -->
+
+<script src="./Every Day I&#39;m Instagramin&#39; _ by Stephen Scaff_files/webfont.js" type="text/javascript" async=""></script><script async="" src="./Every Day I&#39;m Instagramin&#39; _ by Stephen Scaff_files/analytics.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58787203-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Mobile Specific Meta
+================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="./Every Day I&#39;m Instagramin&#39; _ by Stephen Scaff_files/app.css">
+
+
+<!-- Favicon
+================================================== -->
+<link rel="shortcut icon" href="http://everydayiminstagrammin.stephenscaff.com/images/favicon.ico">
+
+<!-- HTML 5 Stuffs
+================================================== -->
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" href="./Every Day I&#39;m Instagramin&#39; _ by Stephen Scaff_files/css" media="all"></head>
+                  
+<!-- Header
+================================================== -->
+<body cz-shortcut-listen="true"><header class="center-all">
+<!-- Logo -->
+
+  	<h1 id="logo" class="kf-fade-in-2">Everyday I'm Instagrammin</h1>
+
+  	<h2 class="color-white animated kf-fade-in-down-3">A Jquery Instagram Plugin by Stephen Scaff</h2>
+
+</header>
+
+
+<!-- Banner
+================================================== -->
+
+<section class="sect-banner xl">
+<div id="" class="row">
+  <ul class="instagram insta-grid kf-fade-in-up">
+  </ul>
+</div>
+  <div class="index-overlay kf-fade-in"></div> 
+  
+</section>
+
+<!-- Main
+================================================== -->
+
+
+<section class="sect-content">
+  <div class="row g-full">
+    <h3>Every Day I'm Instagrammin</h3>
+    <p>A little Jquery plugin (4kb - unminified) that displays Instagram pics by User or HashTag, with some caption options and styles thrown in.</p>
+    <a class="btn btn-clears delta" href="https://github.com/stephenscaff/EveryDayImInstagrammin">Download from Github</a>
+
+  	<h3>Wait, Another Freakin' Instagram Plugin?</h3>
+  	<p>Ha... yeps. Of course there is no shortage a handy Instagram plugins, so Every Day I'm Instagrammin' places an emphasis on being a slim and simple solution, easy peasy to drop in your project on the ready-to-rock tip.
+    
+    </p><h3>How's It Work Then?</h3>
+    <p>Since Instagram's API uses the OAUTH 2.0 protocol, you'll need to snag the client ID for you account and generate an Access Token.</p>
+    
+    <h3>Not sure how?</h3>
+    <p>Well, no worries homie - I gotcha. <a class="link-arrow js-panelslide" href="http://everydayiminstagrammin.stephenscaff.com/#">Check this step by step right here</a>
+
+ 
+    </p><h3 class="color-beta">Let's Set It Up</h3>
+    <p>The plugin outputs your feed's images as list items, so first set up an unordered list with a unique class. By default, the image output with the class name <code class="inline">.everyday-img</code>, but you can define your own image class like so <code class="inline">imgClass: 'insta-img'</code>. The actual list items output with the class <code class="inline">everyday-item</code>.</p>
+    
+   <pre class=" language-markup"><code class=" language-markup">/*Call plugin on an unordered list class*/
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>instagrammin<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span></code></pre>
+  
+    <p>Now just initialize it off your class, adding your account's clientID and Access Token. You can also define the number of pics, 
+    </p><pre class=" language-javascript"><code class=" language-javascript">$<span class="token punctuation">(</span><span class="token string">'.instagrammin'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">everydayImInstagrammin<span class="token punctuation">(</span></span><span class="token punctuation">{</span>
+  clientID<span class="token punctuation">:</span> <span class="token string">'Your-Client-ID'</span><span class="token punctuation">,</span>
+  accessToken<span class="token punctuation">:</span> <span class="token string">'Your-Access-Token'</span><span class="token punctuation">,</span>
+  urlType<span class="token punctuation">:</span> InstaUser<span class="token punctuation">,</span>
+  numberPics<span class="token punctuation">:</span> <span class="token string">'12'</span><span class="token punctuation">,</span>
+  imgClass<span class="token punctuation">:</span> <span class="token string">'insta-img'</span><span class="token punctuation">,</span>
+  captions<span class="token punctuation">:</span> <span class="token string">'true'</span><span class="token punctuation">,</span>
+  captionAlign<span class="token punctuation">:</span> <span class="token string">'bottom'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+ 
+	<h3>Grid Styles</h3>
+		<p>Of course, once you have your stuffs outputting as a list, some styles are required for layout. The demo files include a basic inline grid to getcha going, but you can do whatever you do.</p>
+	</div>
+</section>
+
+
+<section class="sect-instagram xl">
+	<div class="row">
+	<ul class="insta-grid g-5 instagram-liggie"></ul>
+	</div>
+</section>
+
+
+<section class="sect-content">
+  <div class="row g-full">  
+    <h3>By You or By Tag</h3>
+    <p>By default, Every Day drops pics from your dope-ass feed. But, wait... there's more! Drop pics by hashtag by via option <code class="inline">InstaType: byHash</code>, then set your desired hashtag <code class="inline">hashTag: 'httpster'</code>.
+    </p>
+    
+    <h3>How About Some Captions?</h3>
+    <p>Gotcha covered. Just set the option <code class="inline">captions: 'True'</code> and the pic's captions will appear via a simple hover overlay. The overlay can be styled with css and the caption themselves can be aligned Top or Bottom via <code class="inline">captionAlign: 'top'</code> and <code class="inline">captionAlign: 'bottom'</code>. Not a fan of using js for styling unless it's unavoidable, so I've included the minimum styles required for the caption hovers. Of course, you can easily alter to best suit your use.</p>
+        
+    <h3>Anything Else</h3>
+				<p>Um... how about a sexy-ass sequence fade in, one image at a time? Just set the option <code class="inline">sequenceFadeIn: 'true'</code> then define the duration <code class="inline">sequenceDuration: '250'</code></p>
+
+<!-- Options Table
+================================================== -->    
+    <h3>Options / Defaults</h3>
+    
+      <div class="scroller">
+        <table class="table striped responsive">
+          <thead>
+            <tr>
+            <th>Option</th>
+            <th>Description</th>
+            <th>Default Value</th>
+            </tr>
+          </thead>
+          
+          <tbody>
+            <tr>
+            <th scope="row">clientID</th>
+            <td>Instagram api client ID</td>
+            <td>null</td>
+            </tr>
+            
+            <tr>
+            <th scope="row">accessToken</th>
+            <td>Your instagram accessToken</td>
+            <td>null</td>
+            </tr>
+            
+            <tr>
+            <th scope="row">InstaType</th>
+            <td>Show Pics by byUser or byHash</td>
+            <td>byUser</td>
+            </tr>
+            
+            <tr>
+            <th scope="row">hashTag</th>
+            <td>Selects hashtag for byHash</td>
+            <td>null</td>
+            </tr>
+            
+            
+            <tr>
+            <th scope="row">numberPics</th>
+            <td>Number of pics to show</td>
+            <td>12</td>
+            </tr>
+            
+            <tr>
+            <th scope="row">imgClass</th>
+            <td>Class for images</td>
+            <td>'everday-img'</td>
+            </tr>
+            
+            <tr>
+            <th scope="row">captions</th>
+            <td>Show captions on hover</td>
+            <td>True</td>
+            </tr>
+            
+            <tr>
+            <th scope="row">captionsAlign</th>
+            <td>Align captions to 'top' or 'bottom'</td>
+            <td>bottom</td>
+            </tr>
+            
+            <tr>
+            <th scope="row">sequenceFadeIn</th>
+            <td>Fades images in sequentially</td>
+            <td>True</td>
+            </tr>
+            
+            <tr>
+            <th scope="row">sequenceDuration</th>
+            <td>Duration of sequence fade ins</td>
+            <td>220</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    
+    <h3>Getcha Self a Slice</h3>
+    <p>Go on a snag up Every Day I'm Instagramin'</p>
+    <a class="btn delta" href="https://github.com/stephenscaff/EveryDayImInstagrammin">Download from Github</a>
+    
+    <h4>Questions? Comments</h4>
+    <p>Wanna tell me why the code is grimy and I'm a retard?<br> Then hit me up: <a href="http://twitter.com/stephenscaff">@StephenScaff</a></p>  
+  </div>
+</section>
+
+
+
+<!-- Footer
+================================================== -->	
+<footer>
+  <div class="row g-full center-all">
+  <hr>
+    <a href="http://stephenscaff.com/" class="invert">A little thing by Stephen Scaff</a> <br>
+    <a class="" href="http://stephenscaff.com/" id="credit" title="C-right foreva eva, foreva eva">Copyright Foreva Eva</a><p></p>
+  </div>
+</footer>
+
+
+<!-- Panel Slide
+================================================== -->
+
+	<div id="js-slide-contact">
+		<div class="back-bar">
+			<a class="btn-back js-back" href="http://everydayiminstagrammin.stephenscaff.com/#">←</a>
+		</div>
+
+		<section class="sect-contact sect-banner">
+			<div class="row g-full center-all">
+				<h2>Getting Your Instagram<br>
+				User ID and Access Token</h2>
+			</div>
+		</section>
+
+		<section class="sect-content sect-info">
+			<div class="row">
+				<h3>Using a Niffty Web App</h3>
+
+				<p>The easiest way to snag you Instagram account's User ID and Access Token is via this:</p>
+
+				<h4>Instagram access token generator</h4>
+
+				<p>Simply login to Instagram, then use toke and id generator:</p><a class="btn btn-clears delta" href="http://www.pinceladasdaweb.com.br/instagram/access-token/" target="_blank" title="Get Token">Get Your Token</a>
+
+				<h3>Or, Create Your Own Instagram Client</h3>
+
+				<ol>
+					<li>
+						<h3>Head on over to Instagram Developers</h3>
+
+						<p>Go to Instagram's Developer's site at: http://instagram.com/developer/.</p>
+
+						<p>Login with your account info then complete the Developer's signup prompt, providing your site and a brief description of what you want to build with their API.</p>
+					</li>
+
+					<li>
+						<h3>Register a New Client</h3>
+
+						<p>Click the <strong>Register Your Application</strong> to land on the <strong>Manage Clients</strong> page, then <strong>Register a New Client</strong>.</p>
+
+						<p>Here you'll be prompted to fill out some info on your custom app:</p>
+
+						<p><strong>Application Name:</strong> Give you app a descriptive name, such as <em>[Insert Your Name]'s Dope Photo Feed</em>. Make sure not to include the Instagram name as it would violate their API guidelines.<br>
+						<strong>Description:</strong> Offer a brief description of you app<br>
+						<strong>Website:</strong> The main website your feed will appear on.<br>
+						<strong>OAuth redirect_uri:</strong> You could simply use your your main url, or if you're the paranoid type, using <strong>http://localhost</strong> ensures you're private Instagram info is passed only to your computer - just make sure to uncheck the <strong>Disable implicit OAuth</strong> for this method to work.</p>
+
+						<p>Save that badboy and you'll be provided with you Client ID</p>
+					</li>
+
+					<li>
+						<h3>Getcha Access Token</h3>
+
+						<p>Paste the following url into your web browser. <strong>https://instagram.com/oauth/authorize/?client_id=CLIENT_ID&amp;redirect_uri=http://localhost&amp;response_type=token</strong> Replacing <code class="inline">CLIENT_ID</code> with the one you just obtained from the last step.</p>
+
+						<p>Hit enter to be connected to Instagram's servers, then grant Instagram access to the client you just registered. Instagram will redirect you to localhost and your shiny new access token will be appended to the url after <code class="inline">localhost/#access_token=</code></p>
+
+						<p>Again though, the Web App approach above is far less painless.</p>
+					</li>
+				</ol>
+			</div>
+		</section>
+	</div>
+
+<!-- Le javascript
+================================================== -->	
+<script src="./Every Day I&#39;m Instagramin&#39; _ by Stephen Scaff_files/jquery.min.js"></script>
+<script type="text/javascript" src="./Every Day I&#39;m Instagramin&#39; _ by Stephen Scaff_files/everydayiminstagramn.js"></script>
+<script type="text/javascript" src="./Every Day I&#39;m Instagramin&#39; _ by Stephen Scaff_files/demo.js"></script>
+
+
+</body></html>
