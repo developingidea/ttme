@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<!-- saved from url=(0132)https://www.changetip.com/widget/tipme/JnZ6d3AcAZijaebYwbckCX?context=5521c930-be70-4edb-b679-b6ec50110db9&brid=34411102&max_age=600 -->
+<html lang="en" ng-app="changetip" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+  <title>Tip Bitcoin with ChangeTip!</title>
+  <style type="text/css">
+    /* Prevent FOUC */
+    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+          display: none !important;
+    }
+  </style>
+  <link rel="stylesheet" href="./font-awesome.min.css">
+  <link rel="stylesheet" href="./animate.min.css">
+  <link rel="stylesheet" href="./588a668ef151.css" type="text/css">
+</head>
+<body style="padding:0;margin:0" class="ng-scope" ng-controller="TipYourTipMeCtrl">
+  <div class="tipme-button" ng-init="referrer=&#39;http://hellohappy.org/beautiful-web-type/&#39;;tippeeId=&#39;JnZ6d3AcAZijaebYwbckCX&#39;;bid=&#39;5521c930-be70-4edb-b679-b6ec50110db9&#39;;brid=&#39;34411102&#39;;count=&#39;1&#39;;hasTipped=false">
+    <a href="https://www.changetip.com/widget/tipme/JnZ6d3AcAZijaebYwbckCX?context=5521c930-be70-4edb-b679-b6ec50110db9&amp;brid=34411102&amp;max_age=600#" id="button" class="button" ng-class="{&#39;success&#39;: hasTipped || tipped, &#39;loading&#39;: btn_loading}" role="button" ng-click="onClicked()" aria-label="Tip Me With ChangeTip">
+      <span class="button-img"></span> Tip
+      <span class="button-overlay"></span>
+    </a>
+    <div class="count_box">
+       <div>
+        
+          <div class="counter"><span class="ng-binding">1</span>
+            <ng-pluralize count="count" when="{&#39;1&#39;: &#39;tip&#39;, &#39;other&#39;: &#39;tips&#39;}">tip</ng-pluralize>
+          </div>
+        
+       </div>
+    </div>
+  </div>
+  <div id="popover" ct-show="loaded" after-show="turnOffLoading()" after-hide="previewStep=0" class="tipme-popover animation-fadeInDown-fadeOutDown ng-isolate-scope ng-hide" bind-html-compile="popover"></div>
+<script type="text/javascript" async="" src="./mixpanel-2.2.min.js"></script><script>
+    window.CHANGECOIN={
+ "device": null,
+ "currencies": [
+  {
+   "abbreviation": "BTC",
+   "to_usd": 647.76,
+   "featured": 1,
+   "name": "Bitcoin",
+   "updated_at": "2016-06-28T22:29:59+00:00",
+   "to_btc": 1.0,
+   "symbol": "B",
+   "id": 159,
+   "uri": "/v1/currencies/159"
+  },
+  {
+   "abbreviation": "USD",
+   "to_usd": 1.0,
+   "featured": 2,
+   "name": "United States Dollar",
+   "updated_at": "2016-06-28T22:30:01+00:00",
+   "to_btc": 0.0015414,
+   "symbol": "",
+   "id": 149,
+   "uri": "/v1/currencies/149"
+  },
+  {
+   "abbreviation": "EUR",
+   "to_usd": 1.106933,
+   "featured": 3,
+   "name": "Euro",
+   "updated_at": "2016-06-28T22:30:01+00:00",
+   "to_btc": 0.00169532,
+   "symbol": "\u20ac",
+   "id": 49,
+   "uri": "/v1/currencies/49"
+  },
+  {
+   "abbreviation": "GBP",
+   "to_usd": 1.33328,
+   "featured": 4,
+   "name": "British Pound",
+   "updated_at": "2016-06-28T22:30:01+00:00",
+   "to_btc": 0.00202515,
+   "symbol": "\u00a3",
+   "id": 22,
+   "uri": "/v1/currencies/22"
+  },
+  {
+   "abbreviation": "JPY",
+   "to_usd": 0.00975,
+   "featured": 5,
+   "name": "Japanese Yen",
+   "updated_at": "2016-06-28T22:30:01+00:00",
+   "to_btc": 1.48e-05,
+   "symbol": "\u00a5",
+   "id": 70,
+   "uri": "/v1/currencies/70"
+  },
+  {
+   "abbreviation": "CNY",
+   "to_usd": 0.150439,
+   "featured": 6,
+   "name": "Chinese Renminbi Yuan",
+   "updated_at": "2016-06-28T22:30:01+00:00",
+   "to_btc": 0.00023225,
+   "symbol": "\u00a5",
+   "id": 33,
+   "uri": "/v1/currencies/33"
+  },
+  {
+   "abbreviation": "INR",
+   "to_usd": 0.01474,
+   "featured": 7,
+   "name": "Indian Rupee",
+   "updated_at": "2016-06-28T22:30:01+00:00",
+   "to_btc": 2.178e-05,
+   "symbol": "",
+   "id": 64,
+   "uri": "/v1/currencies/64"
+  },
+  {
+   "abbreviation": "RUB",
+   "to_usd": 0.015536,
+   "featured": 8,
+   "name": "Russian Ruble",
+   "updated_at": "2016-06-28T22:30:01+00:00",
+   "to_btc": 2.391e-05,
+   "symbol": "",
+   "id": 116,
+   "uri": "/v1/currencies/116"
+  },
+  {
+   "abbreviation": "AUD",
+   "to_usd": 0.738623,
+   "featured": 9,
+   "name": "Australian Dollar",
+   "updated_at": "2016-06-28T22:30:01+00:00",
+   "to_btc": 0.00110386,
+   "symbol": "",
+   "id": 8,
+   "uri": "/v1/currencies/8"
+  },
+  {
+   "abbreviation": "CAD",
+   "to_usd": 0.767257,
+   "featured": 10,
+   "name": "Canadian Dollar",
+   "updated_at": "2016-06-28T22:30:01+00:00",
+   "to_btc": 0.00117718,
+   "symbol": "",
+   "id": 27,
+   "uri": "/v1/currencies/27"
+  }
+ ],
+ "facebook": {
+  "app_id": "329866120487822"
+ },
+ "user": {
+  "currency": {
+   "to_usd": 1.00000000,
+   "to_btc": 0.00154140,
+   "id": 149,
+   "abbreviation": "USD",
+   "name": "United States Dollar"
+  },
+  "authenticated": false
+ }
+};
+</script>
+
+
+<script type="text/javascript" src="./721b46483835.js"></script>
+
+<script type="text/javascript" src="./0e4b311285d6.js"></script>
+
+
+<!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
+  b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+mixpanel.init("05d254eb722fc6c2c799012f2da0d41f", { track_pageview: false });</script><!-- end Mixpanel -->
+
+
+
+
+<script type="text/javascript">
+(function(window, document) {
+  "use strict"
+
+  /* Constants
+   * ---------------------------- */
+  var API = "/v1/",
+      TEMPLATES = "/public/templates/",
+      SATOSHI = 10e7,
+      FORMAT_STRING = "string",
+      FORMAT_STRING_CURRENCY = "string_currency",
+      FORMAT_HTML = "html";
+
+  /* App
+   * ---------------------------- */
+  //  ### Declare app level module which depends on filters, and services
+  window.app = window.angular.module("changetip", [
+      "ui.bootstrap",
+      "angulartics",
+      "debounce",
+      "ngAnimate",
+      "ngCookies",
+      "ngSanitize",
+      "changetip.factories",
+      "changetip.filters",
+      "changetip.services",
+      "changetip.directives",
+  ])
+
+  .config(["$locationProvider", "$httpProvider", "$compileProvider",
+      function ($locationProvider, $httpProvider, $compileProvider) {
+
+      // Leave this note in here - we currently don't use angular routing, so if you're looking
+      // for location.hash,url,search, etc., you must use $window.location or absurl instead.
+      // $locationProvider.html5Mode(true);
+
+      // Extension for finding query parameters since we can't use $location.search
+      window.location.searchParam = function(key) {
+          var value = window.location.search.match("[\\?&]" + key + "=([^&#]*)");
+          value = value === null ? "" : window.decodeURIComponent(value[1].replace(/\+/g, " "));
+          return value;
+      };
+
+      // Allow bitcoin: urls
+      $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|bitcoin):/);
+
+      // Pass CSRF headers through for AJAX requests, pull it from the hidden field in base.html
+      // NOTE: This code is critical, and changes should be code reviewed.
+      var csrf_token = document.querySelector("input[name=csrfmiddlewaretoken]");
+      if (csrf_token) {
+          $httpProvider.defaults.headers.common["X-CSRFToken"] = csrf_token.value;
+      }
+
+      // Ajax standard header, allows Django is_ajax to function
+      $httpProvider.defaults.headers.common["X-Requested-With"] = 'XMLHttpRequest';
+  }])
+
+  .run( function run ($rootScope, currencyService, $anchorScroll) {
+      $rootScope.loggedInUser = window.CHANGECOIN.user.authenticated;
+      // Set currency information on the rootScope
+      currencyService.getCurrencies($rootScope);
+
+      $anchorScroll();
+  })
+
+  /* jshint maxparams:10 */
+  .service("tipMeService", function($http, $rootScope, debounce, currencyConversionService, encodingService) {
+
+      // Introducing lastRequest to keep track of which is the most recent request to come through
+      // so we know to ignore the results of a previous request if they come in out of order.
+      // This was to solve a problem where the first-tip code prepopulates "1000 bits" amount and
+      // then the user changes it to something that errors out quickly like "$40".
+      // The $40 error would come back quickly and the "1000 bits" success would come in later
+      // and null out the parseTipError. There may be a superior fix for this using promises, but I'm
+      // not that good at angular yet.
+      this.lastRequest = 0;
+
+      this.botResponseAvailable = function(container) {
+          return container.botResponseHtml && container.botResponseHtml != "loading...";
+      };
+
+      function setParseTipError(container, msg) {
+          container.parseTipError = msg;
+      }
+
+      // debounce tip amount parse fail. Give user a chance to type in their amount
+      var debounced_setParseTipError = debounce(setParseTipError, 1500);
+
+      this.parseTip = function(container, tipSpecs, senderBalance, toSendOrNotToSend,
+                               successCallback, postSendCallback, errorCallback) {
+          // Parse the tip to determine what the bot response will look like. Optionally send it.
+          if (!tipSpecs || !tipSpecs.textAmount) {
+              return;
+          }
+
+          var me = this;
+          this.lastRequest += 1;
+          var orderRequests = this.lastRequest;
+
+          container.parsingTip = true;
+          container.sendingTip = toSendOrNotToSend;
+
+          var firstParen = tipSpecs.textAmount.indexOf(" ("),
+              trimmedMoniker = tipSpecs.textAmount.trim();
+          if (firstParen != -1) {
+              trimmedMoniker = tipSpecs.textAmount.substring(0, firstParen).trim();
+          }
+
+          $http({
+              method: "POST",
+              cache: true,
+              url: "/v1/tips/send_tipme",
+              data: encodingService.encode(
+                      {"receiver": tipSpecs.receiverId,
+                       "amount": trimmedMoniker,
+                       "comment": tipSpecs.comment,
+                       "context_url": tipSpecs.contextUrl,
+                       "bid": tipSpecs.bid,
+                       "send": toSendOrNotToSend}),
+              headers: {"Content-Type": "application/x-www-form-urlencoded"}
+          }).success(function(data) {
+              debounced_setParseTipError.cancel();
+
+              if (orderRequests < me.lastRequest) {
+                  // ignore previous requests
+                  return;
+              }
+
+              container.parsingTip = false;
+              container.parseTipError = null;
+              container.botResponseHtml = data.bot_response_html;
+              container.satoshisSpent = data.satoshi_amount;
+              // endingBalance is to inform the post-tip-sent view to be shown so it is independent of the
+              // timing of the processing of the tip.
+              container.endingBalance = senderBalance - container.satoshisSpent;
+
+              if (data.tx_id) {
+                  container.textAmount = data.text_amount;
+                  container.textAmountParsed = data.text_amount_parsed || data.text_amount;
+                  container.satoshisSpent = 0;
+                  container.botResponseHtml = "loading...";
+                  container.txId = data.tx_id;
+                  container.sendingTip = false;
+
+                  if (postSendCallback) {
+                      postSendCallback(data);
+                  }
+              }
+              if (successCallback) {
+                  successCallback(data);
+              }
+          }).error(function(response) {
+              if (orderRequests < me.lastRequest) {
+                  // ignore earlier requests
+                  return;
+              }
+
+              // reset state
+              container.parsingTip = false;
+              container.sendingTip = false;
+              container.parseTipError = null;
+
+              if (response.hasOwnProperty("state") && response.state &&
+                  response.hasOwnProperty("errors") && response.errors.hasOwnProperty("text") && response.errors.text) {
+
+                  if (response.errors.text.indexOf("valid amount") < 0) {
+                      debounced_setParseTipError.cancel();
+                      setParseTipError(container, response.errors.text);
+                  }
+                  else {
+                      debounced_setParseTipError(container, response.errors.text);
+                  }
+              } else if (response.hasOwnProperty("state") && response.state && response.state == 'unauthorized') {
+                  container.parseTipError = "Try refreshing or logging in again.";
+              } else {
+                  container.parseTipError = "Please contact support@changetip.com. " +
+                      "An unexpected error has occurred";
+              }
+
+              if (errorCallback) {
+                  errorCallback(response);
+              }
+          });
+      };
+  })
+
+  /* jshint maxparams: 14 */
+  .controller("TipYourTipMeCtrl", function ($window, $timeout, $rootScope, $scope, $http, $interval, currencyService, currencyGeneratorService, debounce, moneyService, profileService, tipMeService) {
+
+    // This is the threshold beneath which we'll show the "top up" button instead of the "send another tip"
+    // button to someone who has just completed the first-tip flow
+    $scope.endingBalanceThreshold = 0;
+
+    $scope.resetFields = function() {
+        if ($scope.selectedRecipient) {
+            $scope.previousRecipient = $scope.selectedRecipient;
+        }
+        $scope.comment = "";
+        $scope.textAmount = "";
+        $scope.selectedAmount = "";
+        $scope.parseTipError = null;
+        // Do not reset endingBalance here or it'll mess up what gets shown to the user after the tip is sent.
+    };
+
+    $scope.tipIsValid = function() {
+        return $scope.selectedAmount && !$scope.parseTipError && tipMeService.botResponseAvailable($scope);
+    };
+
+    $scope.refreshBalance = function() {
+        moneyService.loadBalance($scope);
+    };
+
+    $scope.refreshAmounts = function() {
+        currencyGeneratorService.generateAllAmounts($scope, null);
+    };
+
+    $scope.startAgain = function() {
+        $scope.txId = null;
+        $scope.tipped = false;
+        $scope.endingBalance = 0;
+        $scope.resetFields();
+        $interval($scope.refreshBalance, 1000, 1).then(function() {
+            // refresh the balance 1 second after the last tip, then refresh amounts (which are based on balance)
+            $scope.refreshAmounts();
+        });
+    };
+
+    $scope.parseTip = function(send) {
+        // Check the constructed tip for validity and optionally send
+        var tipSpecs = {"receiverId": $scope.tippeeId,
+                        "textAmount": $scope.selectedAmount,
+                        "comment": $scope.comment,
+                        "bid": $scope.bid,
+                        // "instanceUrl": origin, // uri of the content being tipped
+                        "contextUrl": $scope.referrer}; // uri of actual tip comment
+
+
+        tipMeService.parseTip($scope, tipSpecs, $scope.balance, send, $window.angular.noop, $scope.onSuccess, $scope.onFailure);
+    };
+
+    $scope.nonSendingParse = function() {
+        // Don't want to send $watch oldValue/newValue arguments into parseTip.
+        // Hence this wrapper.
+        $scope.parseTip();
+    };
+
+    $scope.init = function() {
+      // Let the profile services load and then kick everything off.
+      $scope.allAmounts = [];
+      $scope.authenticated = false;
+      var user = $window.CHANGECOIN.user;
+      if(user && user.authenticated) {
+          $scope.authenticated = true;
+      }
+
+      if($scope.profile) {
+        start();
+      } else {
+        // get profile, then start
+        var profile_defer = profileService.getProfile($scope);
+        if(!!profile_defer) {
+          profile_defer.then(function() {
+            start();
+          });
+        }
+      }
+
+      function start() {
+        $scope.tipper_picture_url = $scope.profile.picture_url;
+
+        // Get tip limit and overdraft max
+        $scope.$watch("balance", function() {
+            if (typeof $scope.balance != "undefined") {
+                // Amounts depend on balance
+                $scope.refreshAmounts();
+                // A late-updated balance can affect the reported success-ability of a pending tip
+                $scope.parseTip();
+            }
+        }, true);
+
+        // Start (again)
+        $scope.startAgain();
+
+        $scope.$watch("selectedAmount", debounce($scope.nonSendingParse, 600));
+        $scope.$watch("comment", debounce($scope.nonSendingParse, 400));
+      }
+    };
+
+    $scope.init();
+
+    $scope.loginPopUp = function() {
+      var url = $window.location.origin + "/login"
+
+      var w = 400, h = 400;
+      // absolute center the window
+      var left = (screen.width/2)-(w/2);
+      var top = (screen.height/2)-(h/2);
+
+      // Open. After login the window.opener will receive a login success message.
+      $window.open(url, "_blank", 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+
+      $scope.close();
+    };
+
+    $scope.close = function() {
+      // tell the iframe parent to reveal the popover
+      $scope.loaded = false;
+      $scope.previewStep=0
+      $scope.resetFields();
+      $window.parent.postMessage({close: true, bid: $scope.bid, brid: $scope.brid}, "*");
+    }
+
+    $scope.cancel = function() {
+      $scope.previewStep=0;
+    }
+
+    $scope.onClicked = function() {
+      $scope.close();
+      $scope.btn_loading = true;
+
+      $http({
+          method: "GET",
+          url: "/widget/tipme-popover/" + $scope.tippeeId + "?context=" + $scope.bid + "&brid=" + $scope.brid
+      }).success(function(data) {
+        $scope.popover = data;
+
+        $timeout(function() {
+          // csrf token only renders for authenticated user
+          var csrf_token = document.getElementById("popover").querySelector("input[name=csrfmiddlewaretoken]");
+          if (csrf_token) {
+              $http.defaults.headers.common["X-CSRFToken"] = csrf_token.value;
+          }
+          // set user info for both authenticated or anonymous
+          $window.CHANGECOIN = JSON.parse($scope.CHANGECOIN);
+          $rootScope.loggedInUser = $window.CHANGECOIN.user.authenticated;
+          // Set currency information on the rootScope
+          currencyService.getCurrencies($rootScope);
+          // reset fields
+          $scope.resetFields();
+          // call init explicitly, as a $watch might be too heavy
+          $scope.init();
+
+          // tell the iframe parent to reveal the popover
+          $window.parent.postMessage({click: true, bid: $scope.bid, brid: $scope.brid}, "*");
+          $scope.loaded = true;
+        }, 0);
+      });
+    }
+
+    $scope.turnOffLoading = function() {
+        $scope.btn_loading = false;
+        $rootScope.$digest(); // hack to fix $animate bug not repainting after callback function sometimes.
+    }
+
+    $scope.onSuccess = function(data) {
+      $timeout(function() {
+        $scope.tipped = true;
+        $scope.btn_loading = $scope.tipping = false;
+        $scope.count = data.count;
+        $scope.hasTipped = data.has_tipped;
+
+        var meta = {
+          sender: $scope.profile.full_name,
+          amount: $scope.textAmountParsed,
+          response: $scope.botResponseHtml
+        };
+        $window.parent.postMessage({success: true, meta: meta}, "*");
+      }, 600)
+    }
+    $scope.onSend = function() {
+        $scope.btn_loading = $scope.tipping = true;
+    }
+    $scope.onFailure = function() {
+      $timeout(function() {
+        $scope.btn_loading = $scope.tipping = false;
+      }, 600)
+    }
+
+    $scope.openTwitterShareLink = function() {
+        var url = location.protocol + "//twitter.com/intent/tweet?text=";
+        url += "Check out this tipworthy content: " + $scope.referrer;
+
+        var w = 400, h = 400;
+        // absolute center the window
+        var left = (screen.width/2)-(w/2);
+        var top = (screen.height/2)-(h/2);
+
+        // Open. After login the window.opener will receive a login success message.
+        $window.open(url, "_blank", 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+    };
+    $scope.openFacebookShareLink = function() {
+        var url = "https://www.facebook.com/sharer/sharer.php?u=";
+        url += encodeURIComponent($scope.referrer);
+        url += "&t=Check out this tipworthy content";
+
+        var w = 400, h = 400;
+        // absolute center the window
+        var left = (screen.width/2)-(w/2);
+        var top = (screen.height/2)-(h/2);
+
+        // Open. After login the window.opener will receive a login success message.
+        $window.open(url, "_blank", 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+    };
+
+
+    window.addEventListener("message", function(msg) {
+      if(msg.origin === $window.location.origin && msg.data.loggedin) {
+        $scope.onClicked();
+      }
+      else {
+        if(msg.data.click) {
+          $scope.onClicked();
+        }
+      }
+    });
+
+  });
+})(window, window.document, true);
+</script>
+
+</body></html>

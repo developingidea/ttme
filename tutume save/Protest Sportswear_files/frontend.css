@@ -1,0 +1,228 @@
+.ogonecw-control-group {
+	margin-bottom: 15px;
+}
+
+.ogonecw-control-label {
+	font-size: 14px;
+	display: inline-block;
+	padding: 6px 15px;
+	width: 120px;
+	font-size: 14px;
+	text-align: right;
+	float: left;
+}
+
+.ogonecw-control-label .ogonecw-required {
+	color: #990000;
+}
+
+.ogonecw-control-group > label+.ogonecw-controls {
+	margin-left: 140px;
+}
+
+ul.payment_methods .ogonecw-control-group > label+.ogonecw-controls
+	{
+	margin-left: 140px;
+}
+
+.ogonecw-description {
+	margin-left: 140px;
+}
+
+.ogonecw-error {
+	margin-left: 140px;
+	color: #D8000C;
+}
+
+.ogonecw-element-error input[type='text'],
+	.ogonecw-element-error input[type='password'],
+	.ogonecw-element-error select {
+	border-color: #D8000C;
+}
+
+.ogonecw-card-cvc input[type='text'] {
+	width: 60px;
+}
+
+.ogonecw-multi-control .ogonecw-controls {
+	display: inline-block;
+}
+
+.ogonecw-multi-control {
+	overflow: auto;
+}
+
+.ogonecw-payment-form-confirm {
+	margin-left: 140px;
+}
+
+.ogonecw-iframe {
+	width: 100%;
+	border: none;
+}
+
+.ogonecw-widget {
+	width: 100%;
+	border: none;
+}
+
+
+.ogonecw-alias-hidden-new {
+	display: none;
+}
+
+.card-brand-image-box {
+	display: inline-block;
+}
+
+.card-brand-image-color.brand-is-deselected {
+	display: none;
+}
+
+.card-brand-image-grey.brand-is-selected {
+	display: none;
+}
+
+.entry-content .card-brand-image-selection img,
+	.card-brand-image-selection img {
+	width: auto;
+	height: 25px;
+	padding-right: 4px;
+	padding-bottom: 4px;
+	margin: 0 .5em 0 0;
+}
+
+.invalid-card-number, .invalid-card-number:focus, .invalid-cvc-number,
+	.invalid-cvc-number:focus, .invalid-issuer-number,
+	.invalid-issuer-number:focus {
+	border-color: #fb7f88;
+	background-image: url(../image/invalid.png);
+	background-position: 95% center;
+	background-repeat: no-repeat;
+}
+
+.valid-card-number, .valid-card-number:focus, .valid-cvc-number,
+	.valid-cvc-number:focus, .valid-issuer-number, .valid-issuer-number:focus
+	{
+	background-image: url(../image/valid.png);
+	background-position: 95% center;
+	background-repeat: no-repeat;
+}
+
+.ogonecw-multi-control .ogonecw-select-field select {
+	margin-right: 1em;
+}
+
+.ogonecw-card-number .ogonecw-multi-control select {
+	float: none;
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+}
+
+.card-brand-image-selection {
+	margin-top: 0.5em;
+	cursor: pointer;
+}
+
+.ogonecw-card-number .ogonecw-html-field {
+	display: block;
+}
+
+.ogonecw-back-to-checkout {
+	margin-top: 10px;
+	font-size: small;
+}
+
+.ogonecw-requires-second-run {
+	display: none;
+}
+
+.ogonecw .col2-set {
+	width: 100%;
+	margin-bottom: 24 px
+}
+
+.ogonecw .col2-set:after, .woocommerce .col2-set:before
+	{
+	content: " ";
+	display: table;
+}
+
+.ogonecw .col2-set :after {
+	clear: both;
+}
+
+.ogonecw .col2-set .col-1 {
+	float: left;
+	width: 48%;
+}
+
+.ogonecw .col2-set .col-2 {
+	float: right;
+	width: 48%;
+}
+
+.ogonecw-external-checkout-line-items-table .head-name {
+	width: 60%;
+}
+
+.ogonecw-external-checkout-line-items-table .head-quantity {
+	width: 10%;
+}
+
+.ogonecw-external-checkout-line-items-table .head-total {
+	width: 30%;
+}
+
+.ogonecw-external-checkout-line-items-table .product-quantity {
+	text-align: center;
+}
+
+.ogonecw-external-checkout-additional {
+	width: 100%;
+	margin-bottom: 24px
+}
+
+.ogonecw-external-checkout-terms {
+	width: 100%;
+	margin-bottom: 12px
+}
+
+.ogonecw-external-checkout-confirm-buttons {
+	margin-bottom: 24px
+}
+
+.ogonecw-external-checkout-account input.button {
+	margin-top: 12px
+}
+
+.cw-external-checkouts {
+	overflow: hidden;
+	margin-bottom: 12px;
+}
+
+.cw-external-checkouts .cw-external-checkout {
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 1em;
+}
+
+.ogonecw-external-checkout-customer-details {
+	margin-bottom: 24px;
+}
+
+.ogonecw-external-checkout-billing {
+	margin-bottom: 24px;
+}
+
+.ogonecw-external-checkout-shipping {
+	margin-bottom: 24px;
+}
+
+.ogonecw-external-checkout-login-info-message {
+	margin-bottom: 24px;
+}
+
+.woocommerce-checkout #payment div.payment_box p:nth-last-of-type(1) {
+	margin-bottom: 0px;
+}
