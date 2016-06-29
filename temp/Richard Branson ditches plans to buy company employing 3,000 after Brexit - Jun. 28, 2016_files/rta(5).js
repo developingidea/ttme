@@ -1,0 +1,1 @@
+crtg_content = ''; (function(){document.cookie = 'crtg_trnr=' + escape(crtg_content) + '; path=/; expires=Fri, 29 Jul 2016 15:36:55 GMT; domain=cnn.com';})();
