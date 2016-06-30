@@ -1,0 +1,9 @@
+.tweets{float:left;width:290px; height:296px;}
+.tweets h2{line-height:20px}
+.tweets small{font-size:12px;}
+.tweets ul{margin:5px 0 0 0; list-style:none; padding:0 0 0 0;}
+.tweets ul li{border-bottom:1px solid #e1e1e1;padding:13px 0 10px;width:270px;}
+.tweets ul li p{font-size:13px;font-weight:bold;color:#333;margin:0 0 6px 0;}
+.tweets ul li:last-child{border-bottom:none}
+.tweets ul li small{font-family:arial;font-size:11px;color:#333;padding:10px 0 0 0;margin:0}
+.tweets ul li a{font-style:italic; color:#F7901E;}
